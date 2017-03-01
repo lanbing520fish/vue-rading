@@ -1,0 +1,2 @@
+export const ADD_TOTAL_TIME = 'ADD_TOTAL_TIME';
+export const GET_ALL_ACCOUNT = 'GET_ALL_ACCOUNT';
