@@ -4,7 +4,6 @@
     <p>{{user.account}}</p>
     <button @click="addTotalTime">加总次数</button>
     <button @click="getAllAccount">获取列表第一个人</button>
-    <router-view></router-view>
   </div>
 </template>
 
