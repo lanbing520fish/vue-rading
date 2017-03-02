@@ -1,18 +1,22 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
-import Footer from '@/components/footer/';
+import Information from '@/components/information/';
+import Notice from '@/components/notice/';
+import Trade from '@/components/trade/';
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      component: Hello
+      path: '/information',
+      component: Information
     }, {
-      path: '/footer',
-      component: Footer
+      path: '/notice',
+      component: Notice
+    }, {
+      path: '/trade',
+      component: Trade
     }
   ]
 })
