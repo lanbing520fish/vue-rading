@@ -1,16 +1,11 @@
 <template>
-    <div>
-      notice
-    </div>
+  <div>
+    notice
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
-    export default {
-        name: '',
-        data() {
-            return {}
-        }
-    }
+  export default {}
 </script>
 
 <style rel="stylesheet/less" type="text/css">
