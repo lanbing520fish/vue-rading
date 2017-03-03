@@ -41,7 +41,7 @@
             </div>
             <button @click.prevent class="btn">获取验证码</button>
           </div>
-          <el-button class="btn-submit" type="primary">确认提交</el-button>
+          <el-button class="btn-submit full-width" type="primary">确认提交</el-button>
         </form>
       </div>
       <div class="regist-img fn-right">
@@ -64,7 +64,7 @@
   }
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .rigist-content {
     width: 100%;
     max-width: 1000px;
@@ -186,13 +186,6 @@
   .regist-form .form-verify .btn.disabled {
     background: #e3f5fc;
     color: #afcbd6;
-  }
-
-  .regist-form .btn-submit {
-    width: 100%;
-    background-color: #4ebee8;
-    border-color: #4ebee8;
-    font-size: 14px;
   }
 
   .regist-img {

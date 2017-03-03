@@ -8,5 +8,5 @@
   export default {}
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
 </style>

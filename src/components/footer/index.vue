@@ -10,7 +10,7 @@
   }
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .footer {
     width: 100%;
     height: 56px;

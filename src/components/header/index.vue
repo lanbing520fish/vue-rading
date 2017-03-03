@@ -3,8 +3,9 @@
     <div class="content">
       <div class="cnt-left">
         <span class="wel">欢迎光临，</span>
-        <a href="/login.html" class="link-login">请登录</a><span class="wl">|</span>
-        <a href="#" class="link-login">注册</a>
+        <a href="/login.html" class="link-login">请登录</a>
+        <span class="wl">|</span>
+        <a href="/regist.html" class="link-login">注册</a>
       </div>
       <div class="cnt-right">
         <span class="wel">客户服务  |  服务电话 025-89768800</span>
@@ -19,7 +20,7 @@
   export default {}
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .header {
     height: 32px;
     width: 100%;

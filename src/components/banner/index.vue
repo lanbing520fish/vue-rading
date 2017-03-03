@@ -10,7 +10,7 @@
   export default {}
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .nav-img {
     width: 100%;
     height: 290px;

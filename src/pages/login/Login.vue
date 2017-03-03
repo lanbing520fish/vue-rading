@@ -40,7 +40,7 @@
                 <a class="refresh"></a>
               </div>
               <div class="password-forget"><a href="#">忘记密码？</a></div>
-              <el-button class="btn-submit" type="primary">登录</el-button>
+              <el-button class="btn-submit full-width" type="primary">登录</el-button>
             </form>
           </div>
           <div class="login-form-phone" v-show="tabIndex===1">
@@ -58,7 +58,7 @@
                 </div>
                 <button @click.prevent class="btn">获取验证码</button>
               </div>
-              <el-button class="btn-submit" type="primary">登录</el-button>
+              <el-button class="btn-submit full-width" type="primary">登录</el-button>
             </form>
           </div>
         </div>
@@ -90,7 +90,7 @@
   }
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .login-content {
     position: relative;
     width: 100%;
@@ -291,12 +291,6 @@
   .login-form .password-forget a {
     color: #716666;
     text-decoration: none;
-  }
-
-  .login-form .btn-submit {
-    width: 100%;
-    background-color: #4ebee8;
-    border-color: #4ebee8;
   }
 
   .login-form .phone-verify .ui-text {

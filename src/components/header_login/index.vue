@@ -26,7 +26,7 @@
   }
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .header {
     height: 80px;
     background: #fff url(header-bg.png) repeat-x 0 bottom;

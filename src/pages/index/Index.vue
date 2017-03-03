@@ -17,7 +17,6 @@
         <a href="#" class="detail">查看详情</a>
       </li>
     </ul>
-    <router-view></router-view>
     <v-footer></v-footer>
   </div>
 </template>
@@ -43,7 +42,7 @@
   }
 </script>
 
-<style rel="stylesheet/less" type="text/css">
+<style lang="less" rel="stylesheet/less">
   .funs {
     width: 1170px;
     height: 260px;
