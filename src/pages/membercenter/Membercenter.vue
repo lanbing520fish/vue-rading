@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="personal-center-content fn-right">
-        <transition name="slide">
+        <transition name="slide-fade">
           <router-view></router-view>
         </transition>
       </div>
@@ -138,6 +138,7 @@
 
   .personal-center .panel-nav a {
     display: block;
+    width: calc(100% + 1px);
     height: 36px;
     line-height: 36px;
   }
@@ -169,7 +170,17 @@
   }
 
   .personal-center-content {
+    position: relative;
     width: 993px;
     min-height: 540px;
+  }
+
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
   }
 </style>
