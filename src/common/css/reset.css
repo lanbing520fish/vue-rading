@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent;
 }
 
-ol, ul, menu, nav {
+ol, ul, menu, nav, li {
   list-style: none;
 }
 
