@@ -3,8 +3,10 @@ import Router from 'vue-router';
 import Information from '@/components/information/';
 import Notice from '@/components/notice/';
 import Trade from '@/components/trade/';
+import Modifyphone from '@/components/modifyphone/';
+import Modifypassword from '@/components/modifypassword/';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -17,6 +19,12 @@ export default new Router({
     }, {
       path: '/trade',
       component: Trade
+    }, {
+      path: '/modifyphone',
+      component: Modifyphone
+    }, {
+      path: '/modifypassword',
+      component: Modifypassword
     }
   ]
 })
