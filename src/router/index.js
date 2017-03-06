@@ -11,6 +11,9 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
+      path: '/',
+      redirect: '/information'
+    },{
       path: '/information',
       component: Information
     }, {
