@@ -8,31 +8,32 @@
 				<el-form-item>
 					<el-col :span="6" class="text-right">旧密码：</el-col>
 					<el-col :span="18">
-						<el-input v-model="form.phonenumber"></el-input>
+						<el-input type="password" v-model="form.oldPassword"></el-input>
 					</el-col>
 				</el-form-item>
 				<el-form-item>
 					<el-col :span="6" class="text-right">新密码：</el-col>
 					<el-col :span="18">
-						<el-input v-model="form.newphonenumber"></el-input>
+						<el-input type="password" v-model="form.newPassword"></el-input>
 					</el-col>
 				</el-form-item>
 				<el-form-item>
 					<el-col :span="6" class="text-right">确认密码：</el-col>
 					<el-col :span="18">
-						<el-input v-model="form.newphonenumber"></el-input>
+						<el-input type="password" v-model="form.newPassword"></el-input>
 					</el-col>
 				</el-form-item>
 				<el-form-item>
 					<el-col :span="6" class="text-right">验证码：</el-col>
-					<el-col :span="12">
+					<el-col :span="11">
 						<el-input placeholder="请输入验证码" v-model="form.testgetcode"></el-input>
 					</el-col>
-					<el-col :span="6" class="text-right">
-						<el-button class="refresh" type="primary" @click="onSubmit">
-							<span class="iconfont"><img src="./refresh.png" alt=""></span>
+					<el-col :span="6" :offset="1" class="text-right refreshcode">
+						<img class="code-img" src="./code.png" alt="" />
+						<button class="refresh" type="primary" @click="onSubmit">
+							<span class="iconfont"><img src="./refresh.png" alt="" /></span>
 							<span class="clickrefresh">点击刷新</span>
-						</el-button>
+						</button>
 					</el-col>
 				</el-form-item>
 				<el-form-item>
@@ -108,14 +109,60 @@
 		margin-top: 34px;
 		height: 34px;
 	}
+	.refreshcode{
+		position: relative;
+	}
+	.code-img{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 36px;
+		width: 120px;
+		border-radius: 4px;
+		z-index: 999;
+		cursor: pointer;
+	}
+	.code-img:hover{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 36px;
+		width: 120px;
+		border-radius: 4px;
+		z-index: 90;
+		cursor: pointer;
+	}
 	.refresh{
+		position: absolute;
+		right: 0px;
+		top: 0px;
 		background: #f5f5f5;
-		border-color: #c3c9d0;
+		border:1px solid #c3c9d0; 
 		color: #323232;
-		padding: 6px 10px;
+		height: 36px;
+		padding: 3px 10px;
+		width: 120px;
+		cursor: pointer;
+		border-radius: 4px;
+		z-index: 990;
+	}
+	.refresh:hover{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		background: #f5f5f5;
+		border:1px solid #c3c9d0; 
+		color: #323232;
+		height: 36px;
+		padding: 3px 10px;
+		width: 120px;
+		cursor: pointer;
+		border-radius: 4px;
+		z-index: 1000;
 	}
 	.refresh .iconfont{
 		float: left;
+		margin-left: 12px;
 		width: 21px;
 		height: 21px;
 		margin-right: 6px;

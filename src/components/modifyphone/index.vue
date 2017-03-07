@@ -20,7 +20,7 @@
 				<el-col :span="6" class="text-right">手机验证码：</el-col>
 				<el-col :span="10" class="getcode">
 					<el-input v-model="form.testgetcode"></el-input>
-					<el-button class="testgetcode" type="primary" @click="onSubmit">获取验证码</el-button>
+					<button @click.prevent class="get-code">获取验证码</button>
 				</el-col>
 			</el-form-item>
 			<el-form-item>
@@ -57,6 +57,19 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
+	.getcode .get-code {
+	    position: absolute;
+	    top: 3px;
+	    right: 3px;
+	    width: 120px;
+	    height: 30px;
+	    background: #e3f5fc;
+	    border: none;
+	    color: #2facdc;
+	    font-size: 14px;
+	    text-align: center;
+	    cursor: pointer;
+	}
 	.mt75{
 		margin-top: 75px;
 	}
